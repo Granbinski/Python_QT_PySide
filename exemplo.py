@@ -17,15 +17,14 @@ class Window(QMainWindow):
 
     font = QFont()
     font.setPixelSize(90)
+    base.setFont(font)
    
 
     self.label = QLabel("Hellow world!!!!")
-    self.label.setFont(font)
     self.label.setAlignment(Qt.AlignCenter)
 
 
     botao = QPushButton("Clique!")
-    botao.setFont(font)
     
     botao.clicked.connect(self.muda_label)
 
